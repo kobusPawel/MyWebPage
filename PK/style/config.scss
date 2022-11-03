@@ -1,0 +1,7 @@
+$mainColor : white;
+$secondColor : orange;
+
+@mixin transition{
+   transition: all 0.5s ease-in-out ;
+    
+}

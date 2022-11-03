@@ -1,0 +1,72 @@
+@import 'config'; 
+@import 'menu';
+body{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1;
+    height: 100vh;
+    width: 100vw;
+    color: $mainColor; 
+    overflow-x: hidden;
+    background: rgba(rgb(58, 56, 56), 0.3)
+} 
+h1{
+    font-size: 2.5rem;
+}
+h2{
+    font-size: 1.75rem;
+    font-weight: 700;
+}
+h3{
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+header{
+    text-align: center;
+}
+
+#pictures{
+    width: 100%;
+    height: 100%;
+    text-align: center; 
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: flex-end;
+} 
+.project{
+    @include transition;
+    margin-bottom: 1.25rem;
+    width: 75%;
+    height: 75vh; 
+    &:hover{
+        @include transition;
+        transform: rotate(2.5deg);
+    }
+}
+
+#KA{
+    background: url('../img/KA.jpg');
+    background-size: cover;
+}
+#GMX{
+    background: url('../img/GMX.jpg');
+    background-size: cover;
+}
+#arjo{
+    background: url('../img/arjo.jpg');
+    background-size: cover;
+}
+#social-icons{
+    position: fixed;
+    bottom: 0.5rem ;
+    left: 0.5rem;
+    a{
+        @include transition;
+        color: $mainColor;
+        margin: 0.4rem;
+       &:hover{
+        color: $secondColor;
+        @include transition;
+       } 
+    }
+}

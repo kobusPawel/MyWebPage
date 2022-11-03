@@ -1,0 +1,26 @@
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.square{
+   width : 200px;
+   height: 200px;
+   border : solid 1px;
+} 
+
+#grid{
+    width : 606px;
+    height : 606px;
+    display : flex;
+    flex-wrap: wrap;
+    border : solid 1px;
+} 
+
+.mol{
+    width : 200px;
+    height: 200px;
+    border : solid 1px;
+    background-color: blue;
+ } 
