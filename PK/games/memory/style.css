@@ -1,0 +1,83 @@
+body{
+    overflow: hidden;
+} 
+#board{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+    width: 100vw;
+}
+#background{
+    position: absolute;
+    left: 0rem;
+    top: 0rem;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+    width: 100vw;
+}
+#cards{
+    width : 900px ;
+    height : auto;
+    flex-wrap: wrap;
+}
+img {  
+    max-width: 100%;  
+    height: auto;  
+    }  
+#result{
+    font-size: 58px;
+    width : 900px; 
+    text-align: center;
+    margin-top: 1rem;
+} 
+#popUpBackground{
+    background-color: rgb(38, 38, 41);
+    width: 100%;
+    height: 100%;
+    opacity: 0.9; 
+    z-index: 2;
+    position: absolute;
+    left: 0rem;
+    top: 0rem; 
+} 
+#messagePositioner{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#background{
+    visibility: hidden;
+}
+#message{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 15% 85%;
+    font-size: 3rem;
+    width: 40%;
+    height: 25%; 
+    background-color: white;
+    z-index: 3;
+} 
+#closePopUp{
+    padding: 0.4rem;
+    width:5%;
+    height: 15%;
+    color: black;
+    grid-row: 1; 
+    justify-self: end;
+    cursor: pointer;
+    font-size: 2rem;
+}
+#text{
+    grid-row: 2; 
+    align-self: center;
+} 

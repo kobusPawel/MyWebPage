@@ -1,0 +1,66 @@
+#menu {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  width: 60px;
+  height: 40px;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-around;
+  cursor: pointer;
+  z-index: 3;
+}
+
+.menu_bar {
+  transition: all 0.5s ease-in-out;
+  width: 100%;
+  height: 2px;
+  background-color: white;
+  z-index: 3;
+}
+
+.pointerActive {
+  transition: all 0.5s ease-in-out;
+  background-color: orange;
+}
+
+.nav {
+  transition: all 0.5s ease-in-out;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  opacity: 0.98;
+  transform: translateY(-100%);
+  z-index: 2;
+}
+.nav_open {
+  transition: all 0.5s ease-in-out;
+  transform: translateY(0%);
+  visibility: visible;
+  height: 100vh;
+  background-color: #222020;
+}
+
+.nav-list {
+  height: 100vh;
+  text-align: center;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  list-style-type: none;
+  text-decoration: none;
+  font-size: 2rem;
+}
+
+.listItem {
+  display: inline-block;
+  padding: 2rem;
+  color: white;
+}
+.listItem a {
+  color: white;
+}
+.listItem_Active a {
+  color: orange;
+}/*# sourceMappingURL=menu.css.map */
